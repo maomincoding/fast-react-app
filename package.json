@@ -1,9 +1,8 @@
 {
   "name": "fast-react-app",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
-  "source": "src/index.js",
+  "source": "src/index.jsx",
   "targets": {
     "index": {
       "includeNodeModules": {},
