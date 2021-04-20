@@ -1,9 +1,9 @@
 # fast-react-app
-> You can install it through Parcel-Vue-Cli to build the project.
+> You can install it through FastReactCli to build the project.
 
 **fast-react-app**
 ```
-https://www.npmjs.com/package/parcel-vue-cli
+https://www.npmjs.com/package/fast-react-cli
 ```
 #### Description
 Blazing fast, zero configuration react application bundler.

@@ -1,6 +1,6 @@
 {
   "name": "fast-react-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "parcel",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maomincoding/parcel-vue-app.git"
+    "url": "https://github.com/maomincoding/fast-react-app.git"
   },
   "source": "src/index.jsx",
   "targets": {
