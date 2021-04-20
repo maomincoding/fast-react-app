@@ -12,7 +12,7 @@
       "outputFormat": "esmodule",
       "scopeHoist": false,
       "optimize": true,
-      "publicUrl": "/"
+      "publicUrl": "/site/test1"
     }
   },
   "scripts": {

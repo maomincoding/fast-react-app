@@ -1,16 +1,16 @@
-import React, { useEffect} from 'react';
-import {Tit} from './style.js';
-import { connect } from 'react-redux';
-import { actionsCreator } from './store/index.js';
-import { List } from 'antd';
+import React, { useEffect } from "react";
+import { Tit } from "./style.js";
+import { connect } from "react-redux";
+import { actionsCreator } from "./store/index.js";
+import { List } from "antd";
 
 const mapStateToProps = (state) => {
   return {
-    name: state.getIn(['home', 'name']),
-    list: state.getIn(['home', 'list']),
-    datalist: state.getIn(['home', 'datalist']),
-    flag: state.getIn(['home', 'flag'])
-  }
+    name: state.getIn(["home", "name"]),
+    list: state.getIn(["home", "list"]),
+    datalist: state.getIn(["home", "datalist"]),
+    flag: state.getIn(["home", "flag"]),
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
@@ -22,33 +22,28 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(actionsCreator.animat());
     },
     getdata() {
-      dispatch(actionsCreator.getList())
-    }
-  }
+      dispatch(actionsCreator.getList());
+    },
+  };
 };
 
-const Home =(props)=>{
-const { name, datalist, getdata } = props;
-const newList = datalist.toJS();
+const Home = (props) => {
+  const { name, datalist, getdata } = props;
+  const newList = datalist.toJS();
   useEffect(() => {
-    document.title = 'Home1';
+    document.title = "Home1";
     getdata();
-  }, [])
+  }, []);
   return (
-      <div>
+    <div>
       <Tit>{name}1</Tit>
       <List
         bordered
         dataSource={newList}
-        renderItem={item => (
-          <List.Item>
-            {item.username}
-          </List.Item>
-        )}
+        renderItem={(item) => <List.Item>{item.username}</List.Item>}
       />
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
-
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
