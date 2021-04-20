@@ -1,24 +1,26 @@
-import { actionsTypes } from './index.js';
+/* eslint-disable import/no-cycle */
 import { fromJS } from 'immutable';
+import { actionsTypes } from './index';
+
 let i = 0;
 
-let defaultState = fromJS({
-    name: 'FastReactApp',
-    list: [],
-    datalist: [],
-    flag:false
+const defaultState = fromJS({
+  name: 'FastReactApp',
+  list: [],
+  datalist: [],
+  flag: false,
 });
 
 export default (state = defaultState, action) => {
-    switch (action.type) {
-        case actionsTypes.CLICK:
-            i++;
-            return state.set('list', state.get('list').push(i))
-        case actionsTypes.DATA_LIST:
-            return state.set('datalist', action.data)
-        case actionsTypes.ANIMAT:
-            return state.set('flag', true)
-        default:
-            return state;
-    }
+  switch (action.type) {
+    case actionsTypes.CLICK:
+      i += 1;
+      return state.set('list', state.get('list').push(i));
+    case actionsTypes.DATA_LIST:
+      return state.set('datalist', action.data);
+    case actionsTypes.ANIMAT:
+      return state.set('flag', true);
+    default:
+      return state;
+  }
 };

@@ -1,34 +1,29 @@
-import { actionsTypes } from './index.js';
-import { homeData } from '../../../request/api.js';
+/* eslint-disable import/no-cycle */
 import { fromJS } from 'immutable';
+import { homeData } from '../../../request/api';
+import { actionsTypes } from './index';
 
-export const click = () => {
-    return {
-        type: actionsTypes.CLICK
-    }
-};
+export const click = () => ({
+  type: actionsTypes.CLICK,
+});
 
-export const animat = () => {
-    return {
-        type: actionsTypes.ANIMAT
-    }
-};
+export const animat = () => ({
+  type: actionsTypes.ANIMAT,
+});
 
-const dataList = (data) => {
-    return {
-        type: actionsTypes.DATA_LIST,
-        data: fromJS(data)
-    }
-};
+const dataList = (data) => ({
+  type: actionsTypes.DATA_LIST,
+  data: fromJS(data),
+});
 
-export const getList = () => {
-    return (dispatch) => {
-        homeData().then((res) => {
-            const data = res;
-            const action = dataList(data);
-            dispatch(action);
-        }).catch((err) => {
-            console.log(err);
-        })
-    }
+export const getList = () => (dispatch) => {
+  homeData()
+    .then((res) => {
+      const data = res;
+      const action = dataList(data);
+      dispatch(action);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };

@@ -1,6 +1,6 @@
-// home页面的store配置
-import reducer from './reducer.js';
-import * as actionsTypes from './actionsTypes.js';
-import * as actionsCreator from './actionsCreator.js';
+/* eslint-disable import/no-cycle */
+import reducer from './reducer';
+import * as actionsTypes from './actionsTypes';
+import * as actionsCreator from './actionsCreator';
 
 export { reducer, actionsCreator, actionsTypes };

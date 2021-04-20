@@ -1,9 +1,9 @@
 // 分模块Reducer
 import { combineReducers } from 'redux-immutable';
-import { reducer as homeReducer } from '../views/Home/store/index.js';
+import { reducer as homeReducer } from '../views/Home/store/index';
 
 const reducer = combineReducers({
-    home: homeReducer
+  home: homeReducer,
 });
 
 export default reducer;
