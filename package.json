@@ -2,6 +2,24 @@
   "name": "fast-react-app",
   "version": "1.0.0",
   "license": "MIT",
+  "keywords": [
+    "parcel",
+    "react"
+  ],
+  "description": "Blazing fast, zero configuration react application bundler.",
+  "private": false,
+  "author": {
+    "name": "maomincoding",
+    "email": "17864296568@163.com",
+    "url": "https://www.maomin.club"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maomincoding/parcel-vue-app.git"
+  },
   "source": "src/index.jsx",
   "targets": {
     "index": {
