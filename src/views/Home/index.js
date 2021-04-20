@@ -31,12 +31,12 @@ const Home =(props)=>{
 const { name, datalist, getdata } = props;
 const newList = datalist.toJS();
   useEffect(() => {
-    document.title = 'Home';
+    document.title = 'Home1';
     getdata();
   }, [])
   return (
       <div>
-      <Tit>{name}</Tit>
+      <Tit>{name}1</Tit>
       <List
         bordered
         dataSource={newList}

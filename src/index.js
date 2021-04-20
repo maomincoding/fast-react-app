@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App.js";
 import reportWebVitals from "./common/reportWebVitals.js";
 import "./styles/index.css";
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 import "./styles/reset.css";
 
 ReactDOM.render(
