@@ -24,6 +24,7 @@ export const getList = () => (dispatch) => {
       dispatch(action);
     })
     .catch((err) => {
+      // eslint-disable-next-line no-console
       console.log(err);
     });
 };
