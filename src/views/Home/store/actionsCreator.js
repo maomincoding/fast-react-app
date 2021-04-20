@@ -3,19 +3,12 @@ import { fromJS } from 'immutable';
 import { homeData } from '../../../request/api';
 import { actionsTypes } from './index';
 
-export const click = () => ({
-  type: actionsTypes.CLICK,
-});
-
-export const animat = () => ({
-  type: actionsTypes.ANIMAT,
-});
-
 const dataList = (data) => ({
   type: actionsTypes.DATA_LIST,
   data: fromJS(data),
 });
 
+// eslint-disable-next-line import/prefer-default-export
 export const getList = () => (dispatch) => {
   homeData()
     .then((res) => {

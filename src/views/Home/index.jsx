@@ -6,18 +6,10 @@ import { actionsCreator } from './store/index';
 
 const mapStateToProps = (state) => ({
   name: state.getIn(['home', 'name']),
-  list: state.getIn(['home', 'list']),
   datalist: state.getIn(['home', 'datalist']),
-  flag: state.getIn(['home', 'flag']),
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  handerClick() {
-    dispatch(actionsCreator.click());
-  },
-  clickAnimation() {
-    dispatch(actionsCreator.animat());
-  },
   getdata() {
     dispatch(actionsCreator.getList());
   },
@@ -27,7 +19,7 @@ const Home = (props) => {
   // eslint-disable-next-line react/prop-types
   const { name, datalist, getdata } = props;
   // eslint-disable-next-line react/prop-types
-  const newList = datalist ? datalist.toJS() : [];
+  const newList = datalist.toJS();
   useEffect(() => {
     document.title = 'Home';
     getdata();
