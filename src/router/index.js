@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router";
-import Home from "../views/Home/index.jsx";
-import About from "../views/About/index.jsx";
+import Home from "../views/Home/index.js";
+import About from "../views/About/index.js";
 
 const APPRouter = () => (
   <div>

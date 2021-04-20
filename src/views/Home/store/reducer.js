@@ -3,7 +3,7 @@ import { fromJS } from 'immutable';
 let i = 0;
 
 let defaultState = fromJS({
-    name: 'ReactCli',
+    name: 'FastReactApp',
     list: [],
     datalist: [],
     flag:false

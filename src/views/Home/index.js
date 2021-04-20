@@ -33,7 +33,7 @@ const newList = datalist.toJS();
   useEffect(() => {
     document.title = 'Home';
     getdata();
-  }, [getdata, document.title])
+  }, [])
   return (
       <div>
       <Tit>{name}</Tit>
