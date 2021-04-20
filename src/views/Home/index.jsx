@@ -27,7 +27,7 @@ const Home = (props) => {
   // eslint-disable-next-line react/prop-types
   const { name, datalist, getdata } = props;
   // eslint-disable-next-line react/prop-types
-  const newList = datalist.toJS();
+  const newList = datalist ? datalist.toJS() : [];
   useEffect(() => {
     document.title = 'Home';
     getdata();
