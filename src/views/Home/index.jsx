@@ -29,7 +29,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const Home =(props)=>{
 const { name, datalist, getdata } = props;
-const newList = datalist;
+const newList = datalist.toJS();
   useEffect(() => {
     document.title = 'Home';
     getdata();

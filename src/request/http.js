@@ -2,7 +2,7 @@
 import axios from 'axios';
 // 环境的切换
 if (process.env.NODE_ENV === 'development') {
-    axios.defaults.baseURL = '/' // 开发环境
+    axios.defaults.baseURL = 'http://localhost:7788/' // 开发环境
 } else if (process.env.NODE_ENV === 'debug') {
     axios.defaults.baseURL = '' // 调试环境
 } else if (process.env.NODE_ENV === 'production') {
