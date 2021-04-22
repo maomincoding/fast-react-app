@@ -3,7 +3,7 @@ import { fromJS } from 'immutable';
 import { actionsTypes } from './index';
 
 const defaultState = fromJS({
-  name: 'FastReactApp',
+  name: 'Blazing fast, zero configuration react application bundler.',
   datalist: [],
 });
 

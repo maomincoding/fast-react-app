@@ -19,7 +19,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -33,10 +32,17 @@
 }
 
 .App-router{
-  margin: 50px 20px 50px 20px;
+  margin: 20px;
 }
 
 .App-router a{
   color: #61dafb;
   margin: 0 20px;
+  text-decoration: underline;
+}
+
+.App-title{
+  font-size: calc(10px + 2vmin);
+  margin: 50px;
+  color: #61dafb;
 }

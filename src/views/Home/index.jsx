@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { List } from 'antd';
-import { Tit } from './style';
+import { Tit, Txt } from './style';
 import { actionsCreator } from './store/index';
 
 const mapStateToProps = (state) => ({
@@ -27,11 +27,13 @@ const Home = (props) => {
   return (
     <div>
       <Tit>{name}</Tit>
-      <List
-        bordered
-        dataSource={newList}
-        renderItem={(item) => <List.Item>{item.username}</List.Item>}
-      />
+      <Txt>
+        <List
+          bordered
+          dataSource={newList}
+          renderItem={(item) => <List.Item>{item.username}</List.Item>}
+        />
+      </Txt>
     </div>
   );
 };

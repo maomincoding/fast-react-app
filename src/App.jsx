@@ -14,6 +14,7 @@ function App() {
         <BrowserRouter>
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
+            <p className="App-title">FastReactApp</p>
             <div className="App-router">
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>

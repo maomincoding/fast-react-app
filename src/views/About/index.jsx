@@ -7,7 +7,7 @@ const About = () => {
   }, []);
   return (
     <div>
-      <Tit>This is the About page</Tit>
+      <Tit>GitHub:https://github.com/maomincoding/fast-react-app.git</Tit>
     </div>
   );
 };
