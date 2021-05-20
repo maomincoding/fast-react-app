@@ -1,74 +1,74 @@
 {
-  "name": "fast-react-app",
-  "version": "1.0.1",
-  "license": "MIT",
-  "keywords": [
-    "parcel",
-    "react"
-  ],
-  "description": "Blazing fast, zero configuration react application bundler.",
-  "private": false,
-  "author": {
-    "name": "maomincoding",
-    "email": "17864296568@163.com",
-    "url": "https://www.maomin.club"
-  },
-  "engines": {
-    "node": ">=14"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/maomincoding/fast-react-app.git"
-  },
-  "source": "src/index.jsx",
-  "targets": {
-    "index": {
-      "includeNodeModules": {},
-      "context": "browser",
-      "distDir": "./buildDir",
-      "outputFormat": "esmodule",
-      "scopeHoist": false,
-      "optimize": true,
-      "publicUrl": "/site/test1"
-    }
-  },
-  "scripts": {
-    "start": "parcel ./public/index.html --port 3000 --no-source-maps",
-    "build": "parcel build ./public/index.html --no-source-maps",
-    "api": "mocker ./mock/mocker.js",
-    "serve": "concurrently \"yarn api\" \"yarn start\""
-  },
-  "mocker": {
-    "port": 7788
-  },
-  "proxy": "http://localhost:7788/",
-  "devDependencies": {
-    "@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
-    "@parcel/transformer-image": "2.0.0-beta.2",
-    "babel-plugin-import": "^1.13.3",
-    "concurrently": "^6.0.2",
-    "eslint": "^7.24.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "mocker-api": "^2.8.3",
-    "parcel": "^2.0.0-beta.2"
-  },
-  "dependencies": {
-    "antd": "^4.15.2",
-    "axios": "^0.21.1",
-    "immutable": "^4.0.0-rc.12",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.3",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5",
-    "redux-immutable": "^4.0.0",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^5.2.3",
-    "web-vitals": "^1.1.1"
-  }
+	"name": "fast-react-app",
+	"version": "1.0.2",
+	"license": "MIT",
+	"keywords": [
+		"parcel",
+		"react"
+	],
+	"description": "Blazing fast, zero configuration react application bundler.",
+	"private": false,
+	"author": {
+		"name": "maomincoding",
+		"email": "17864296568@163.com",
+		"url": "https://www.maomin.club"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/maomincoding/fast-react-app.git"
+	},
+	"source": "src/index.jsx",
+	"targets": {
+		"index": {
+			"includeNodeModules": {},
+			"context": "browser",
+			"distDir": "./buildDir",
+			"outputFormat": "esmodule",
+			"scopeHoist": false,
+			"optimize": true,
+			"publicUrl": "/site/test1"
+		}
+	},
+	"scripts": {
+		"start": "parcel ./public/index.html --host 127.0.0.1 --port 3000 --no-source-maps",
+		"build": "parcel build ./public/index.html --no-source-maps",
+		"api": "mocker ./mock/mocker.js",
+		"serve": "concurrently \"yarn api\" \"yarn start\""
+	},
+	"mocker": {
+		"port": 7788
+	},
+	"proxy": "http://localhost:7788/",
+	"devDependencies": {
+		"@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
+		"@parcel/transformer-image": "2.0.0-beta.2",
+		"babel-plugin-import": "^1.13.3",
+		"concurrently": "^6.0.2",
+		"eslint": "^7.24.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.23.2",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"mocker-api": "^2.8.3",
+		"parcel": "^2.0.0-beta.2"
+	},
+	"dependencies": {
+		"antd": "^4.15.2",
+		"axios": "^0.21.1",
+		"immutable": "^4.0.0-rc.12",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-redux": "^7.2.3",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0",
+		"redux": "^4.0.5",
+		"redux-immutable": "^4.0.0",
+		"redux-thunk": "^2.3.0",
+		"styled-components": "^5.2.3",
+		"web-vitals": "^1.1.1"
+	}
 }
