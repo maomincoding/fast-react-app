@@ -14,7 +14,6 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(actionsCreator.getList());
   },
 });
-
 const Home = (props) => {
   // eslint-disable-next-line react/prop-types
   const { name, datalist, getdata } = props;

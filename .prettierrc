@@ -1,0 +1,18 @@
+{
+	"printWidth": 80,
+    "parser": "babel",
+    "tabWidth": 2,
+	"useTabs": false,
+	"proseWrap": "preserve",
+	"bracketSpacing": true,
+	"endOfLine": "auto",
+	"eslintIntegration": false,
+	"jsxBracketSameLine": false,
+	"jsxSingleQuote": false,
+	"requireConfig": true,
+	"stylelintIntegration": false,
+	"trailingComma": "all",
+	"tslintIntegration": false,
+	"semi": true,
+	"singleQuote": true
+}
