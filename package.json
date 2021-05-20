@@ -1,6 +1,6 @@
 {
 	"name": "fast-react-app",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"license": "MIT",
 	"keywords": [
 		"parcel",
@@ -41,7 +41,7 @@
 	"mocker": {
 		"port": 7788
 	},
-	"proxy": "http://localhost:7788/",
+	"proxy": "http://127.0.0.1:7788/",
 	"devDependencies": {
 		"@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
 		"@parcel/transformer-image": "2.0.0-beta.2",
